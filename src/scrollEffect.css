@@ -1,0 +1,19 @@
+/* Demo Page css */
+
+.xx{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: black;
+}
+
+ .xx h1 {
+    color: white;
+    width: 230%;
+    font-size: 17rem;
+    transform: translateX(80%);
+}
