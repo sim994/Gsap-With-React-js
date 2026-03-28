@@ -138,6 +138,24 @@ body {
 
 /* ===== Prectise code for gsap animation and their css ====== */
 
+.practise{
+  height: 300vh;
+  width: 100%;
+  overflow: hidden;
+}
+.practise .sec1{
+  height: 90vh;
+  width: 100%;
+}
+.practise .sec{
+  height: 100vh;
+  background-color: black;
+}
+.practise h1{
+  transform: translateX(100%);
+  font-size:11rem;
+  color: white;
+}
 .practise .box {
   height: 250px;
   width: 250px;
@@ -148,3 +166,4 @@ body {
   width: 250px;
   background-color: crimson;
 }
+
