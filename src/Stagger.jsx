@@ -11,7 +11,7 @@ export function Stagger() {
             filter:"blur(10px)",
             stagger:{
                 grid:[3,3],
-                from:"right",
+                from:"random",
                 axis:"x",
                 amount:.5
             }
