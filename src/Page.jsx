@@ -4,6 +4,7 @@ import { HeroPage } from "../src/HeroPage";
 import { About } from "../src/About";
 import { Practise } from "../src/Practise";
 import { Stagger } from "../src/Stagger";
+import { ScrollEffects} from "../src/ScrollEffects";
 
 export function Page() {
   return (
@@ -11,9 +12,10 @@ export function Page() {
       {/* <Navbar />
       <HeroPage />
       <About />
-       */}
-      {/* <Practise /> */}
-      <Stagger />
+      <Practise />
+      <Stagger /> */}
+
+      <ScrollEffects />
 
     </>
   );

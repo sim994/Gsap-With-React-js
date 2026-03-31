@@ -1,29 +1,31 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function ScrollEffects() {
-  const gsapRef = useRef();
-  const { contextSafe } = useGSAP();
   gsap.registerPlugin(ScrollTrigger);
-  let tl = gsap.timeline();
   useLayoutEffect(() => {
-    gsap.to("h1", {
-      transform:"translateX(-72%)",
-      scrollTrigger:{
-        trigger:".xx",
-        scrub:true,
-        markers:true,
-        pin:true,
-        top:"top -50%",
-        end:"top -90%"
-      }
+    gsap.to(".animation-container h1", {
+      x: -1200,
+      scrollTrigger: {
+        trigger: ".animation-container h1",
+        start: "0% 50%",
+        end: "0% 50%",
+        markers: true,
+        scrub: 1.5,
+        pin: true,
+      },
     });
-  }, []);  
+  }, []);
   return (
-    <div className="xx">
-      <h1>Wellcome to my portfolio </h1>
+    <div className="scrollEffect-container">
+      <div className="normal-container">
+        <h1>Scroll Trigger Animation || GSAP</h1>
+      </div>
+      <div className="animation-container">
+        <h1>Welcome To Gsap ScrollTrigger Animation</h1>{" "}
+      </div>
     </div>
   );
 }
