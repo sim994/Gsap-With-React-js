@@ -1,27 +1,27 @@
-/* Demo Page css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.scrollEffect-container{
-    height: 200vh;
+.scrollEffect-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: black;
 }
-.normal-container{
+
+.normal-container {
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
- .normal-container h1 {
+
+.normal-container h1 {
     text-align: center;
     color: #33db58;
-    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 6vw, 5rem); /* responsive 🔥 */
 }
 
 .animation-container {
@@ -29,12 +29,15 @@
     width: 100%;
     background-color: white;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative; /* needed for GSAP pin */
 }
 
 .animation-container h1 {
     white-space: nowrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #33db58;
-    font-size: 10rem;
-    transform: translateX(80%);
+    font-size: clamp(4rem, 10vw, 10rem); /* responsive */
+    will-change: transform; /* smoother animation 🚀 */
 }

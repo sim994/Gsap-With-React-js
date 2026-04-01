@@ -7,11 +7,11 @@ export function ScrollEffects() {
   gsap.registerPlugin(ScrollTrigger);
   useLayoutEffect(() => {
     gsap.to(".animation-container h1", {
-      x: -1200,
+      x: "-100%",
       scrollTrigger: {
-        trigger: ".animation-container h1",
-        start: "0% 50%",
-        end: "0% 50%",
+        trigger: ".animation-container",
+        start: "0 0%",
+        end: "50% 0%",
         markers: true,
         scrub: 1.5,
         pin: true,
@@ -23,9 +23,11 @@ export function ScrollEffects() {
       <div className="normal-container">
         <h1>Scroll Trigger Animation || GSAP</h1>
       </div>
+
       <div className="animation-container">
         <h1>Welcome To Gsap ScrollTrigger Animation</h1>{" "}
       </div>
+     
     </div>
   );
 }
