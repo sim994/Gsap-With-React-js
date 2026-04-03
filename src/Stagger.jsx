@@ -10,7 +10,7 @@ export function Stagger() {
             duration:1,
             filter:"blur(10px)",
             stagger:{
-                grid:[3,3],
+                grid:[3,4],
                 from:"random",
                 axis:"x",
                 amount:.5
@@ -23,6 +23,7 @@ export function Stagger() {
         <h1>Professional Skills</h1>
         <div className="skills">
           <h3>Web Design</h3>
+          <h3>Web Devloper</h3>
           <h3>Video Editing</h3>
           <h3>Content Creator</h3>
           <h3>Logo Designer</h3>
